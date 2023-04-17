@@ -2,12 +2,11 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
-  // Live Sass Compiler (Settings from the example of the author's Docs)
+  // Live Sass Compiler
   "liveSassCompile.settings.formats": [
-    // You can add more
     {
-      "format": "expanded",
-      "extensionName": ".css",
+      "format": "compressed",
+      "extensionName": ".min.css",
       "savePath": "/styles/"
     }
   ],
