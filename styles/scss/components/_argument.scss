@@ -1,0 +1,13 @@
+.argument {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.argument__img {
+  width: 100px;
+  height: 100px;
+}
+.argument.text {
+}
