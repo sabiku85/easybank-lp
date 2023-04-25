@@ -1,18 +1,18 @@
-.footer {
+.menu {
   width: 100vw;
-  min-height: 190px;
-  margin-top: 80px;
-  background-color: $darkBlue;
+  height: 80px;
+  background-color: $white;
 }
 
-.footer__container {
+.menu__container {
   display: grid;
-  grid-template-columns: 1.1fr 1.5fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  align-items: center;
   max-width: 1110px;
-  min-height: 190px;
+  min-height: 80px;
   margin: 0 auto;
-  padding: 45px 15px;
+  padding: 0 15px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -20,8 +20,8 @@
   }
 }
 
-.footer__col-left,
-.footer__col-right {
+.menu__col-left,
+.menu__col-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,7 +34,7 @@
   }
 }
 
-.footer__col-right {
+.menu__col-right {
   align-items: flex-end;
 
   @media screen and (max-width: 768px) {
@@ -44,10 +44,11 @@
   }
 }
 
-.footer__col-center {
+.menu__col-center {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -57,34 +58,36 @@
   }
 }
 
-.footer__links {
-  display: flex;
-  align-items: flex-end;
-  gap: 13px;
-}
-
-.footer__link {
-  color: $white;
+.menu__link {
+  color: #C3C2C7;
   transition: 0.2s;
-
-  path {
-    transition: 0.2s;
-  }
 }
 
-.footer__link:hover {
-  color: $mattGreen;
+.menu__link--nav {
+  position: relative;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 
-  path {
-    fill: $mattGreen;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 15px;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(48,207,96,1) 0%, rgba(48,195,158,1) 40%, rgba(64,182,204,1) 100%);
+    transition: width 0.2s;
   }
-}
 
-.footer__link--nav {
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: 300;
+  &:hover {
+    color: $grey;
 
+    &::after {
+      width: calc(100% - 30px);
+    }
+  }
 
   @media screen and (max-width: 768px) {
     display: inline-block;
@@ -92,13 +95,6 @@
   }
 }
 
-.footer__button--send {
+.menu__button--send {
   @include send-button;
-}
-
-.footer__text--light {
-  font-size: 14px;
-  font-weight: 300;
-  color: $white;
-  opacity: 0.5;
 }

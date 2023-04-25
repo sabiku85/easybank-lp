@@ -8,6 +8,7 @@ body {
   font-family: $mainFontFamily;
   font-size: $mainFontSize;
   color: $darkGrey;
+  overflow-x: hidden;
 }
 
 a {

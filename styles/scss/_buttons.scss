@@ -1,0 +1,33 @@
+@mixin send-button {
+  position: relative;
+  width: 165px;
+  height: 45px;
+  border-radius: 35px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: $white;
+  background: linear-gradient(90deg, rgba(48,207,96,1) 0%, rgba(48,195,158,1) 40%, rgba(64,182,204,1) 100%);
+  
+  &::after {
+    content: '';
+    transition: 0.2s;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 35px;
+      z-index: 5;
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+}
