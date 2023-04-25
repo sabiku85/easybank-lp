@@ -4,6 +4,11 @@
     font-weight: 500;
   }
   .box--article{
+    @media (min-width: 768px) {
+      display: inline-block;
+      width: 20%;
+      padding: 20px;
+    }
     padding: 10px;
     .box__img--article {
       height: 200px;
@@ -23,6 +28,9 @@ font-weight: 300;
     .box__article--article{
       padding: 0 20px 20px 20px;
       color: $grayishBlue;
+      @media (min-width: 768px){
+        font-size: 0.9rem;
+      }
     }
   }
 }
