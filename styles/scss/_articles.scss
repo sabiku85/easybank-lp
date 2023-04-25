@@ -4,15 +4,15 @@
     font-weight: 500;
   }
   .box--article{
+    margin: auto;
     @media (min-width: 768px) {
       display: inline-block;
       width: 20%;
       padding: 20px;
     }
-    padding: 10px;
     .box__img--article {
       height: 200px;
-      width: 20rem ;
+      width: 95% ;
       margin: auto;
       border-radius: 5px 5px 0 0;
     }
