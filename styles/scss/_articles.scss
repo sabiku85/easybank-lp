@@ -4,15 +4,22 @@
   .section__heading--articles {
     text-align: center;
     font-weight: 500;
-    @media screen and (min-width: 768px) {
-      text-align: left;
+    @media screen and (min-width: 768px){
       padding-bottom: 30px;
     }
+  }
+  .box--articles{
+    display: grid;
+    gap: 10px;
+    @media screen and (min-width: 768px){
+      grid-template-columns: 1fr 1fr 1fr 1fr;}
+    @media screen and (max-width: 768px) {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
   }
   .box--article{
     margin: auto;
     @media screen and (min-width: 768px) {
-      display: inline-block;
       width: 17rem;
       align-content: center;
     }
