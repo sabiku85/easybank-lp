@@ -1,7 +1,43 @@
-.section__heading--arguments {
-  text-align: center;
-  font-weight: 500;
-  @media screen and (min-width: 768px) {
-    text-align: left;
-    padding-bottom: 30px;
+.section--arguments {
+  margin: auto;
+  padding: 100px 0;
+  background-color: $lightGrayishBlue;
+  .section__heading--arguments {
+    text-align: center;
+    font-weight: 500;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      padding-bottom: 30px;
+    }
+    }
+    .section__article--arguments{
+      width: 50%;
+      overflow-wrap: normal;
+      color: $grayishBlue;
+      padding-bottom: 30px;
+      @media (min-width: 768px){
+        font-size: 0.9rem;
+      }
+  }
+  .box--argument{
+    height:300px ;
+    margin: auto;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      width: 17rem;
+      align-content: center;
+    }
+    }
+    
+    .box__heading--argument{
+padding: 10px 0;
+font-weight: 500;
+    }
+    .box__article--argument{
+      padding: 10px 10px 10px 0;
+      color: $grayishBlue;
+      @media (min-width: 768px){
+        font-size: 0.9rem;
+      }
+    }
   }
