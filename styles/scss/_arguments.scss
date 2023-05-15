@@ -1,0 +1,7 @@
+.section__heading--arguments {
+  text-align: center;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    padding-bottom: 30px;
+  }
