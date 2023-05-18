@@ -19,15 +19,18 @@
         font-size: 0.9rem;
       }
   }
+  .box--arguments{
+    @media screen and (min-width: 768px)  {display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;}
   .box--argument{
     height:200px ;
     margin: auto;
     @media screen and (min-width: 768px) {
-      display: inline-block;
       width: 17rem;
       align-content: center;
     }
     }
+  }
     .box__heading--argument{
       padding: 10px 0;
       font-weight: 500;
