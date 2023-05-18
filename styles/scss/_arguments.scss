@@ -1,6 +1,6 @@
 .section--arguments {
   margin: auto;
-  padding: 100px 0;
+  padding: 50px 10rem;
   background-color: $lightGrayishBlue;
   .section__heading--arguments {
     text-align: center;
@@ -20,7 +20,7 @@
       }
   }
   .box--argument{
-    height:300px ;
+    height:200px ;
     margin: auto;
     @media screen and (min-width: 768px) {
       display: inline-block;
@@ -28,10 +28,9 @@
       align-content: center;
     }
     }
-    
     .box__heading--argument{
-padding: 10px 0;
-font-weight: 500;
+      padding: 10px 0;
+      font-weight: 500;
     }
     .box__article--argument{
       padding: 10px 10px 10px 0;
