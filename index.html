@@ -41,8 +41,42 @@
           <div class="menu__logo">
             <a href="#"><img src="images/logo.svg" alt="Easybank logo" /></a>
           </div>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" media="all" href="styles/styles.min.css" />
+  </head>
+  <body>
+    <input id="toggle-menu" class="menu__element--input" type="checkbox" />
+    <div class="body__apla"></div>
+    <nav class="menu">
+      <div class="menu__container">
+        <div class="menu__col--left">
+          <div class="menu__logo">
+            <a href="#"><img src="images/logo.svg" alt="Easybank logo" /></a>
+          </div>
         </div>
 
+        <!-- <input id="toggle-menu" class="menu__element--input" type="checkbox" /> -->
+        <div class="menu__col--right-mobile">
+          <label class="menu__wrapper--button" for="toggle-menu">
+            <span class="menu__element--button"></span>
+          </label>
+        </div>
         <!-- <input id="toggle-menu" class="menu__element--input" type="checkbox" /> -->
         <div class="menu__col--right-mobile">
           <label class="menu__wrapper--button" for="toggle-menu">
@@ -65,7 +99,23 @@
             Request Invite
           </button>
         </div>
+        <div class="menu__col--center">
+          <div class="menu__wrapper--links">
+            <a href="#" class="menu__link menu__link--nav">Home</a>
+            <a href="#" class="menu__link menu__link--nav">About</a>
+            <a href="#" class="menu__link menu__link--nav">Contact</a>
+            <a href="#" class="menu__link menu__link--nav">Blog</a>
+            <a href="#" class="menu__link menu__link--nav">Careers</a>
+          </div>
+        </div>
+
+        <div class="menu__col--right">
+          <button type="button" class="menu__button--send">
+            Request Invite
+          </button>
+        </div>
       </div>
+    </nav>
     </nav>
 
     <main>
@@ -276,6 +326,28 @@
             >
           </span>
         </div>
+        <div class="footer__col-center">
+          <span>
+            <a href="#" class="footer__link footer__link--nav">About Us</a>
+          </span>
+          <span>
+            <a href="#" class="footer__link footer__link--nav">Contact</a>
+          </span>
+          <span>
+            <a href="#" class="footer__link footer__link--nav">Blog</a>
+          </span>
+          <span>
+            <a href="#" class="footer__link footer__link--nav">Careers</a>
+          </span>
+          <span>
+            <a href="#" class="footer__link footer__link--nav">Support</a>
+          </span>
+          <span>
+            <a href="#" class="footer__link footer__link--nav"
+              >Privacy Policy</a
+            >
+          </span>
+        </div>
 
         <div class="footer__col-right">
           <button type="button" class="footer__button--send">
@@ -295,6 +367,7 @@
       >. Coded by <a href="#">Easybank crew</a>.
     </div>
 
+    <script src="scripts/scripts.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>
