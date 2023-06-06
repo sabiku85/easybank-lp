@@ -2,6 +2,8 @@
   margin: auto;
   padding: 50px 10rem;
   background-color: $lightGrayishBlue;
+  @media screen and (max-width: 768px) {
+   padding: 3rem}
   .section__heading--arguments {
     text-align: center;
     font-weight: 500;
@@ -9,6 +11,7 @@
       text-align: left;
       padding-bottom: 30px;
     }
+    
     }
     .section__article--arguments{
       width: 50%;
