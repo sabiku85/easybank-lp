@@ -1,43 +1,59 @@
 .section--arguments {
-  margin: auto;
-  padding: 50px 10rem;
+  width: 100vw;
+  padding: 50px 0;
   background-color: $lightGrayishBlue;
-  @media screen and (max-width: 768px) {
-   padding: 3rem}
+
+   .arguments__container {
+    max-width: 1140px;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 0 15px;
+  
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 25px;
+    }
+   }
+   .box__heading--arguments {
+    @media screen and (max-width: 560px) {
+      text-align: center;
+    }
+   }
   .section__heading--arguments {
-    text-align: center;
     font-weight: 500;
-    @media screen and (min-width: 768px) {
-      text-align: left;
-      padding-bottom: 30px;
-    }
+    padding-bottom: 30px;
     
-    }
     .section__article--arguments{
-      width: 50%;
       overflow-wrap: normal;
       color: $grayishBlue;
-      padding-bottom: 30px;
+      padding-top: 30px;
       @media (min-width: 768px){
         font-size: 0.9rem;
       }
+    }
   }
   .box--arguments{
-    @media screen and (min-width: 768px)  {display: grid;
-      gap:30px;
+    display: grid;
+    gap:30px;
+    padding-top: 50px;
+    @media screen and (min-width: 768px)  {
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  .box--argument{
-    min-height:300px ;
-    margin: auto;
-    overflow: hidden;
-    @media screen and (min-width: 768px) {
-      width: 17rem;
-      align-content: center;
     }
+    .box--argument{
+      margin: auto;
+      overflow: hidden;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        // width: 17rem;
+        min-height:300px ;
+        align-content: center;
+        text-align: left;
+      }
     }
-  }
     .box__heading--argument{
-      padding: 10px 0;
+      padding: 30px 0 15px;
       font-weight: 500;
     }
     .box__article--argument{
