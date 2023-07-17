@@ -3,6 +3,10 @@
   min-height: 190px;
   margin-top: 80px;
   background-color: $darkBlue;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
 }
 
 .footer__container {
