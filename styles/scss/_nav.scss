@@ -2,11 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  z-index: 10;
   width: 100vw;
   height: 80px;
   background-color: $white;
-  box-shadow: 0 3px 6px #00000029;
 }
 
 .menu__container {
@@ -77,6 +76,11 @@
 .menu__logo {
   display: flex;
   align-items: center;
+  max-height: 20px;
+
+  a {
+    max-height: 20px;
+  }
 }
 
 .menu__link {
@@ -207,6 +211,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 10;
   background-color: $darkGrey;
   opacity: 0.6;
 }
